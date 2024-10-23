@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+.hero{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 15px 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-image: url("images/coding.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    background-position: center;
+}
+.hero nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 1px;
+    width: 100%;
+    padding: 15px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    background: lightseagreen;
+}
+    nav img{
+    width: 30px; 
+}
+nav ul{
+    flex: 1;
+    text-align: end;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 5px 8px;}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 2px 10px;
+    border-radius: 30px;
+    transition: 0.3s;
+    transition-property: background;
+}
+nav a:hover{
+    background: orange;
+}
+.text-box{
+    margin-top: 18%;
+    max-width: 650px;  
+}
+.text-box h1{
+    font-size: 55px;
+    line-height: 50px;
+    font-weight: 800;
+    color: rgb(68, 219, 212);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    padding: 1%;
+}
+.text-box p{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 30px;
+    line-height: 18px;
+    padding: 1%;
+    background: none;
+}
+.text-box button{
+    padding: 10px 20px;
+    background: rgb(29, 247, 236);
+    border: 0;
+    outline: 0;
+    margin-top: 5px;
+    margin-right: 0;
+    border-radius: 40px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.5s;
+    transition-property: background;
+}
+.text-box button:hover{
+    background: lightsalmon;
+}
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background: white;
+}
+.icon a{
+    position: relative;
+    color:lightseagreen;
+    font-size: 20px;
+    transition: 0.3s;
+}
+.icon a:not(:last-child){
+    margin-right: 80px;
+}
+.icon a:hover{
+    transform: scale(1.5);
+}
+.footer{
+  position: center;  
+  align-items: center;
+  }
+.footer p{
+        text-align: center;
+        color: black;
+        font-size: 10px;
+} 
+ label{
+    display: none;
+ }
+ nav #check{
+    z-index: 3;
+    display: none;
+ }
+
+  @media (min-width: 375px){
+   .nav label{
+        display: none; }
+nav label{
+    display: block;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+}
+nav label:hover{
+    color: whitesmoke;
+}
+nav label{
+display: none;
+}
+#check:checked~ .nav{
+    z-index: 2;
+    position: fixed;
+    background: rgb(247, 210, 210);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#check:checked~ .nav a{
+    font-weight: 600;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+}
+#check:checked~label .close-btn{
+    display: none;
+}
+#check:checked~label .menu-btn{
+    z-index: 2;
+    display: block;
+    position: fixed;
+}
+nav label .menu.btn{
+    position: absolute;
+}
+nav .img{
+    position: absolute;
+    bottom: 6px;
+}
+.text-box h1{
+    font-size: 40px;
+    line-height: 40px;
+    margin-top: 25px;
+}
+.text-box p{
+    font-size: 20px; 
+}
+}
+@meda (max-width: 960px){
+    .text-box h1{
+        font-size: 80px;
+        line-height: 50px;
+    }
+    .text-box p{
+        font-size: 30px; 
+    }
+}
