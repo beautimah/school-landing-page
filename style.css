@@ -189,7 +189,7 @@ nav .img{
     font-size: 20px; 
 }
 }
-@meda (max-width: 960px){
+@media (max-width: 960px){
     .text-box h1{
         font-size: 80px;
         line-height: 50px;
